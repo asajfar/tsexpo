@@ -1,6 +1,9 @@
+<?php
+   include('session.php');
+?>
+
 <!doctype html>
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+
 <html lang="en">
 
 <head>
@@ -19,55 +22,55 @@
   <meta name="author" content="ASajfar">
 
   <!-- Bootstrap CSS  -->
-  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../asset/css/bootstrap.min.css" type="text/css" media="screen">
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" media="screen">
 
   <!-- Slicknav - responsive Mobile menu -->
-  <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/slicknav.css" media="screen">
 
   <!-- Site CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
 
   <!-- Responsive CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/responsive.css" media="screen">
 
   <!-- Css3 Transitions Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/animate.css" media="screen">
 
   <!-- Color CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/jade.css" title="jade" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/beige.css" title="beige" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/cyan.css" title="cyan" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/orange.css" title="orange" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/peach.css" title="peach" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/pink.css" title="pink" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/purple.css" title="purple" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/sky-blue.css" title="sky-blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/red.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/jade.css" title="jade" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/green.css" title="green" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/blue.css" title="blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/beige.css" title="beige" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/cyan.css" title="cyan" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/orange.css" title="orange" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/peach.css" title="peach" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/pink.css" title="pink" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/purple.css" title="purple" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/sky-blue.css" title="sky-blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/colors/yellow.css" title="yellow" media="screen" />
 
   <!-- Site JS  -->
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/jquery.migrate.js"></script>
-  <script type="text/javascript" src="js/modernizrr.js"></script>
-  <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="js/jquery.appear.js"></script>
-  <script type="text/javascript" src="js/count-to.js"></script>
-  <script type="text/javascript" src="js/jquery.textillate.js"></script>
-  <script type="text/javascript" src="js/jquery.lettering.js"></script>
-  <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-  <script type="text/javascript" src="js/jquery.parallax.js"></script>
-  <script type="text/javascript" src="js/mediaelement-and-player.js"></script>
-  <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+  <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="../js/modernizrr.js"></script>
+  <script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="../js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.appear.js"></script>
+  <script type="text/javascript" src="../js/count-to.js"></script>
+  <script type="text/javascript" src="../js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="../js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="../js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="../js/mediaelement-and-player.js"></script>
+  <script type="text/javascript" src="../js/jquery.slicknav.js"></script>
   
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -97,9 +100,9 @@
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html">
-              <img alt="" src="images/tslogo.png" class="logo-full">
-              <img alt="" src="images/tslogo2.png" class="logo-mobile">
+            <a class="navbar-brand" href="../index.html">
+              <img alt="" src="../images/tslogo.png" class="logo-full">
+              <img alt="" src="../images/tslogo2.png" class="logo-mobile">
             </a>
           </div>
           <div class="navbar-collapse collapse">
@@ -116,10 +119,10 @@
             <!-- Start Navigation List -->
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
               </li>
               <li>
-                <a href="../sr/index.html">Naslovna</a>
+                <a href="../../sr/index.html">Naslovna</a>
               </li>
             </ul>
             <!-- End Navigation List -->
@@ -129,10 +132,10 @@
         <!-- Mobile Menu Start -->
         <ul class="wpb-mobile-menu">
           <li>
-            <a class="active" href="index.html">Home</a>
+            <a class="active" href="../index.html">Home</a>
           </li>
           <li>
-            <a href="../sr/index.html">Naslovna</a>
+            <a href="../../sr/index.html">Naslovna</a>
           </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -145,18 +148,18 @@
 
 
     <!-- Start Page Banner -->
-    <div class="page-banner" style="padding:40px 0; background: url(images/bg1.jpg) center;">
+    <div class="page-banner" style="padding:40px 0; background: url(../images/bg1.jpg) center;">
       <div class="slika-effect1"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Login form</h2>
+            <h2>Welcome <?php echo $login_firstname; ?></h2>
             <p>Traffic Solutions Expo</p>
           </div>
           <!-- <div class="col-md-6">
             <ul class="breadcrumbs">
               <li><a href="index.html">Home</a></li>
-              <li>Login</li>
+              <li>Registration</li>
             </ul>
           </div> -->
         </div>
@@ -176,19 +179,11 @@
             <div class="col-md-4 col-md-offset-4">
 
               <!-- Classic Heading -->
-              <h3 class="classic-title"><span>Login</span></h3>
+              <h3 class="classic-title"><span>Your data / Vaši podaci</span></h3>
 
               <!-- Form -->
               <div class="box">
-                <div id="loginform">                  
-                  <div id="mainlogin">
-                    <form action="php/login.php" method="POST">
-                      <input type="text" name="korisnik" placeholder="username / korisničko ime" value="" required>
-                      <input type="password" name="lozinka" placeholder="password / lozinka" value="" required>
-                      <button type="submit" name="submit">LOGIN<!-- <i class="fa fa-arrow-right"> --></i></button>
-                    </form>
-                  </div>
-                </div>
+                Page is under construction / Stranica je u izradi
               </div>
 
               
@@ -198,8 +193,6 @@
 
           </div>
 
-          <!-- Divider -->
-          <div class="hr1" style="margin-bottom:50px;"></div>
         </div>
       </div>
     </div>
@@ -248,7 +241,7 @@
           <!-- Start Contact Widget -->
           <div class="col-md-6">
             <div class="footer-widget contact-widget">
-              <h4><img src="images/tslogo_w.png" class="img-responsive" alt="Footer Logo" /></h4>
+              <h4><img src="../images/tslogo_w.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>Contact us:</p>
               <ul>
                 <li><span>Phone Number:</span> +381 (0) 64 12 49 757</li>
@@ -392,7 +385,7 @@
     </ul>
   </div>-->
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
 
   <!-- Google Analytics Code -->
   <script>
