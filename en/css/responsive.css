@@ -1,3 +1,50 @@
+	@media (max-width: 1280px) {
+	.page-banner-naslovna .slika {
+		height: 800px;
+	}
+}
+
+@media (max-width: 1130px) {
+	.page-banner-naslovna .slika {
+		height: 850px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.page-banner-naslovna .slika {
+		height: 870px;
+	}
+}
+
+@media (max-width: 1040px) {
+	.page-banner-naslovna .slika {
+		height: 1020px;
+	}
+
+	.register-button {
+		margin-bottom: 10px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.page-banner-naslovna .slika {
+		height: 990px;
+	}
+
+	/*.register-button {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 685px) {
+
+	.register-button {
+		width: 300px;
+	}*/
+}
+
+
 @media (max-width: 1200px) {
 	
 	.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -35,6 +82,10 @@
 }
 
 @media (max-width: 991px) {
+
+	.page-banner-naslovna .slika {
+		height: 500px;
+	}
 
 	.why {
 		display: inline-table;
@@ -209,9 +260,9 @@
 		margin-bottom: 35px;
 	}
 	
-	.page-banner-naslovna .slika {
+	/*.page-banner-naslovna .slika {
 	height: 500px;
-	}
+	}*/
 
 
 }
@@ -265,6 +316,22 @@
 	
 
 }
+
+
+@media only screen and (max-width: 570px) {
+	.db-pricing-seven ul li {
+	    height: 60px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.db-pricing-seven ul li {
+	    font-size: 0.9em;
+	}
+}
+
+
+
 @media only screen and (max-width: 479px) { 
   
     .top-bar  {
@@ -460,9 +527,9 @@
 		display: none;
 	}
 
-    .page-banner-naslovna .slika {
+    /*.page-banner-naslovna .slika {
     	height: 500px;
-	}
+	}*/
     
 }
 
@@ -470,7 +537,7 @@
 @media (max-width : 479px) {
     
     .page-banner-naslovna .slika {
-    	height: 500px;
+    	height: 550px;
 	}
 
     #main-slide .item .slider-content{

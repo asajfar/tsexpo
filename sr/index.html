@@ -6,7 +6,7 @@
 <head>
 
   <!-- Basic -->
-  <title>TRAFFIC SOLUTIONS EXPO</title>
+  <title>NASLOVNA | TRAFFIC SOLUTIONS EXPO</title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Page Description and Author -->
-  <meta name="description" content="Traffic Solutions Expo, Novi Sad Fair, City of Novi Sad, Serbia">
+  <meta name="description" content="Dobrodošli na prvi međunarodni sajam saobraćaja u Srbiji TRAFIC SOLUTIONS EXPO 2016. 13.-15. oktobar 2016., Novi Sad, Srbija. Saznajte više o sajmu!">
   <meta name="author" content="ASajfar">
 
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -75,6 +75,18 @@
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- Google Analytics Code -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76465485-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
 
 </head>
 
@@ -191,11 +203,20 @@
               <li>
                 <a href="ts-exposr.html">TS-EXPO</a>
               </li>
-              <li>
-                <a href="izlagaci.html">IZLAGAČI</a>
+              <li class="drop">
+                <a class="not-link" href="#">IZLAGAČI</a>
+                <ul class="dropdown">
+                  <li><a href="profil-izlagaca.html">PROFILI IZLAGAČA</a>
+                  </li>
+                  <li><a href="uslovi-izlaganja.html">USLOVI ZA IZLAGANJE</a>
+                  </li> 
+                </ul>
               </li>
               <li>
                 <a href="posetioci.html">POSETIOCI</a>
+              </li>
+              <li>
+                <a href="program.html">PROGRAM</a>
               </li>
               <li>
                 <a href="lokacija.html">Lokacija i kontakt</a>
@@ -213,11 +234,20 @@
           <li>
             <a href="ts-exposr.html">TS-EXPO</a>
           </li>
-          <li>
-            <a href="izlagaci.html">IZLAGAČI</a>
+         <li>
+            <a class="not-link" href="#">IZLAGAČI</a>
+            <ul class="dropdown">
+              <li><a href="profil-izlagaca.html">PROFILI IZLAGAČA</a>
+              </li>
+              <li><a href="uslovi-izlaganja.html">USLOVI ZA IZLAGANJE</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="posetioci.html">POSETIOCI</a>
+          </li>
+          <li>
+            <a href="program.html">PROGRAM</a>
           </li>
           <li>
             <a href="lokacija.html">LOKACIJA I KONTAKT</a>
@@ -237,26 +267,36 @@
       <div class="slika"></div>
       <div class="slika-effect1"></div>
       <div class="slika-effect2"></div>
-      <div class="row-slide">
-        <div class="naslov1_sr">DOBRODOŠLI NA PRVI SAJAM SAOBRAĆAJA</div>
-        <div class="naslov2_sr">TRAFFIC SOLUTIONS EXPO 2016</div>
-        <div class="naslov3">13.-15. OKTOBAR 2016.</div>
-        <button class="register-button" data-toggle="modal" data-target="#myModalHorizontal">PRIJAVA</button>
+      <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+      <div itemscope itemtype="http://schema.org/Event" class="row-slide">
+        <div class="naslov1_sr">DOBRODOŠLI NA <span itemprop="description">PRVI MEĐUNARODNI SAJAM SAOBRAĆAJA U SRBIJI</span></div>
+        <div itemprop="name" class="naslov2_sr">TRAFFIC SOLUTIONS EXPO 2016</div>
+        <div class="naslov3"><meta itemprop="startDate" content="2016-10-13">13.-15. OKTOBAR 2016., <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Novi Sad</span>, <span itemprop="addressCountry">Srbija</span></span></span></div>
+        <div>
+          <a itemprop="url" href="../en/docs/reg/Registracioni_formular.pdf" target="_blank"><button class="register-button">PRIJAVA za izlagače</button></a>
+          <a itemprop="url"href="../en/docs/reg/Opsti_uslovi_za_izlaganje.pdf" target="_blank"><button class="register-button" >Uslovi za izlaganje</button></a>
+          <button class="register-button" data-toggle="modal" data-target="#myModalHorizontal">PRIJAVA za posetioce</button>
+        </div>
       </div>
       <div class="tekst-box">
         <div class="tekst1 col-xs-12 col-md-4">
           <h1>ORGANIZATORI</h1>
           <p>Public connection d.o.o. Novi Sad</p>
-          <p><a class="link-naslovna" href="http://www.kongresnicentar.sajam.net/">Kongresni centar "Master" Novosadskog sajma</a></p>
-          <p><a class="link-naslovna" href="http://www.ftn.uns.ac.rs/1742896254/departman-za-saobracaj">Univerzitet u Novom Sadu, Fakultet tehničkih nauka - Departman za saobraćaj</a></p>
-          <p><a class="link-naslovna" href="http://www.een.rs/">Evropska mreža preduzetništva</a></p>
+          <p><a class="link-naslovna" href="http://www.kongresnicentar.sajam.net/" target="_blank">Kongresni centar "Master" Novosadskog sajma</a></p>
+          <p><a class="link-naslovna" href="http://www.ftn.uns.ac.rs/1742896254/departman-za-saobracaj" target="_blank">Fakultet tehičkih nauka - Departman za saobraćaj, Univerzitet u Novom Sadu</a></p>
+          <p><a class="link-naslovna" href="http://www.sf.bg.ac.rs/" target="_blank">Saobraćajni fakultet, Univerzitet u Beogradu</a></p>
+          <p><a class="link-naslovna" href="http://www.een.rs/" target="_blank">Evropska mreža preduzetništva</a></p>
         </div>
         <div class="tekst1 col-xs-12 col-md-4">
           <h1>PODRŠKA</h1>
-          <p><a class="link-naslovna" href="http://www.mgsi.gov.rs/">Ministarstvo građevinarstva, saobraćaja i infrastrukture Republike Srbije</a></p>
-          <p><a class="link-naslovna" href="http://www.novisad.rs/">Grad Novi Sad</a></p>
-          <p><a class="link-naslovna" href="http://www.buildplus.rs/">BUILD plus</a></p>
-          <p><a class="link-naslovna" href="http://www.pks.rs/">Privredna komora Srbije</a></p>
+          <p><a class="link-naslovna" href="http://www.mgsi.gov.rs/" target="_blank">Ministarstvo građevinarstva, saobraćaja i infrastrukture Republike Srbije</a></p>
+          <p><a class="link-naslovna" href="http://www.psemr.vojvodina.gov.rs/" target="_blank">Autonomna pokrajina Vojvodina – Pokrajinski sekretarijat za energetiku, građevinarstvo i saobraćaj</a></p>
+          <p><a class="link-naslovna" href="http://www.novisad.rs/" target="_blank">Grad Novi Sad</a></p>
+          <p><a class="link-naslovna" href="http://www.pks.rs/" target="_blank">Privredna komora Srbije</a></p>
+          <p><a class="link-naslovna" href="http://www.kombeg.org.rs/" target="_blank">Privredna komora Beograda</a></p>
+          <p><a class="link-naslovna" href="http://www.rtv.rs/sr_lat/" target="_blank">JMU Radio-televizija Vojvodine</a></p>
+          <p><a class="link-naslovna" href="http://www.buildplus.rs/" target="_blank">BUILD plus</a></p>
         </div>
         <div class="tekst1 col-xs-12 col-md-4">
           <h1>DATUM I MESTO</h1>
@@ -488,18 +528,6 @@
   </div>-->
 
   <script type="text/javascript" src="../en/js/script.js"></script>
-
-  <!-- Google Analytics Code -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-76465485-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
 
   <!-- Modal -->
   <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 

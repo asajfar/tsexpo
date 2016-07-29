@@ -846,8 +846,8 @@ ul,li{
 
 .download-btn:hover{
 	color:#ffffff;
-	background:#fc5a1b;
-	border-color:#fc5a1b;
+	background:#ee3733;
+	border-color:#ee3733;
 }
 
 .schedule-box{
@@ -1035,10 +1035,11 @@ ul,li{
 .schedule-box .hour-box .hour{
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:-4px;
 	width:100px;
 	line-height:2em;
-	color:#7f7f7f;	
+	color:#7f7f7f;
+	font-size: 1.3em;	
 }
 
 .schedule-box .hour-box .circle{
@@ -1139,7 +1140,7 @@ ul,li{
 }
 
 .schedule-box .hour-box .theme-btn{
-	background:#fc5a1b;
+	background:#ee3733;
 	margin:15px 5px 5px;
 }
 

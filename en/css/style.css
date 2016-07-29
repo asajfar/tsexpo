@@ -625,6 +625,16 @@ ul.social-list li:last-child a i {
 	border-bottom: 2px solid;
 }
 
+.navbar-default .navbar-nav > li > a.not-link{
+	cursor: pointer;
+	pointer-events: none;
+}
+
+.slicknav_nav .slicknav_item a.not-link{
+	cursor: pointer;
+	pointer-events: none;
+}
+
 .navbar-default .navbar-nav > li > a i {
 	margin: 0 -2px 0 -5px;
 }
@@ -836,6 +846,10 @@ ul.social-list li:last-child a i {
 }
 
 img.logo-mobile {
+    display: block;
+}
+
+img.logo-full {
     display: none;
 }
 
@@ -857,7 +871,7 @@ img.logo-mobile {
 .page-banner-naslovna .slika {
 	background-image: url("../images/bg1.jpg");
 	width: 100%;
-	height: 600px;
+	height: 750px;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -920,7 +934,7 @@ img.logo-mobile {
 .naslov1_sr {
 	position: relative;
 	left: -50%;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #fff;
 	font-weight: 300;
 	line-height: 1em;
@@ -1000,15 +1014,15 @@ img.logo-mobile {
     font-weight: 300	;
     border: 1px solid #fff;
     border-radius: 0px;
-    padding: 12px 40px;
+    padding: 12px 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 10px;
-    background-color: #ee3733;
+    background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
-    width: 210px;
+    width: 160px;
     text-decoration: none;
 }
 .register-button:hover {
@@ -6100,13 +6114,31 @@ ul.icons-list li i {
 	text-align: center;
 	color: #fff;
     font-size: 12px;
-    font-weight: 300	;
+    font-weight: 300;
     border: 1px solid #fff;
     border-radius: 0px;
     padding: 12px 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: #37A8D8;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    width: 285px;
+    text-decoration: none;
+}
+
+.register-button-izv2 {
+	text-align: center;
+	color: #fff;
+    font-size: 12px;
+    font-weight: 300	;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #fcb651;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -6121,13 +6153,23 @@ ul.icons-list li i {
     transition: all .5s;
 }
 
+.register-button-izv2:hover {
+	color: #fff;
+    background-color: #a57734;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
 .registration {
 	margin-top: 25px;
+	text-align: center;
+	padding-right: 10px;
 }
 
 .registration i {
 	margin-right: 10px;
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 
 /* Login page */
@@ -6163,4 +6205,87 @@ ul.icons-list li i {
     background-color: #ee4538;
     border: none;
     color: #fff;
+}
+
+/* ----------------------- PRICE TABLE CSS --------------------------------*/
+
+.no-left-padding {
+	padding-left: 0px;
+}
+
+.db-pricing-seven {
+    text-align: center;
+    border: 1px solid #C5C2C2;
+    background-color: #EDEDED;
+    overflow: overlay;
+}
+
+.db-pricing-seven ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.db-pricing-seven ul li {
+    border-bottom: solid 1px #D8D8D8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    /*text-transform: uppercase;*/
+    width: 80%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.db-pricing-seven ul li.price {
+	text-align: center;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.2em;
+    color: #353c3e;
+    font-weight: 400;
+    width: 100%;
+}
+
+.db-pricing-seven ul li.price_header {
+	font-weight: 500;
+	text-align: center;
+}
+
+.db-pricing-seven ul li.kolona {
+	display: inline;
+	width: 20%;
+	border-left: solid 1px #D8D8D8;
+	text-align: center;
+}
+
+.db-pricing-seven ul li.price i {
+    padding: 30px;
+    font-size: 50px;
+    display: block;
+}
+
+
+.pricing-footer {
+	padding: 0px 10px 0 10px;
+	font-size: 0.9em;
+	text-align: left;
+	padding-left: 0px;
+	margin-bottom: 30px;
+}
+
+.db-pricing-seven .pricing-footer a i {
+    margin: 5px;
+    top: 3px;
+}
+
+.table_reg {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #ededed;
+    border: 1px solid #C5C2C2;
+    border-top: none;
 }

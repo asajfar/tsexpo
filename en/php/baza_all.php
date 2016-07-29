@@ -36,6 +36,15 @@
         <link rel="stylesheet" href="baza.css">
         <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" media="screen">
         <link rel="author" href="humans.txt">
+        <script type="text/javascript">
+		    function delete_user(uid)
+		    {
+		        if (confirm('Are You Sure to Delete this Record?'))
+		        {
+		            window.location.href = 'index.php?id=' + uid;
+		        }
+		    }
+	    </script>
     </head>
     <body>
     	<header>
@@ -118,7 +127,8 @@
 			{
 				echo "<tr>";
 					echo '<td><a href="edit.php?id=' . $row['id'] . '">Edit</a></td>';
-					echo '<td><a href="delete.php?id=' . $row['id'] . '">Delete</a></td>';
+					// echo '<td><a href="delete.php?id=' . $row['id'] . '">Delete</a></td>';
+					echo "<td><a href=\"javascript: delete_user(" . $row['id'] . ")\">Delete</a></td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['firstname']) . "</td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['lastname']) . "</td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['gender']) . "</td>";
