@@ -37,11 +37,11 @@
         <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" media="screen">
         <link rel="author" href="humans.txt">
         <script type="text/javascript">
-		    function delete_user(uid)
+		    function delete_user(uid,fname,lname,company,mail)
 		    {
-		        if (confirm('Are You Sure to Delete this Record?'))
+		        if (confirm('Da li ste sigurni da želite da obrišete ovog korisnika?\n\nIME: ' + fname + '\nPREZIME: ' + lname + '\nKOMPANIJA: ' + company + '\nEMAIL: ' + mail))
 		        {
-		            window.location.href = 'index.php?id=' + uid;
+		            window.location.href = 'baza_all.php?id=' + uid;
 		        }
 		    }
 	    </script>
@@ -75,6 +75,7 @@
 		echo "		<input type=\"submit\" name=\"trazi\" value=\"&#xf002;\">\n";
 		echo "	</form>\n";
 		echo "	<form class=\"export_excel\" action=\"export.php\" method=\"post\"><input type=\"submit\" class=\"export_button\" name=\"export_excel\" value=\"Export to Excel\"></form>\n";
+		echo "	<form class=\"duplikat\" action=\"duplikat.php\" method=\"post\"><input type=\"submit\" class=\"duplikat_button\" name=\"duplikat\" value=\"Pronađi duplikate (email)\"></form>\n";
 		echo "	<form class=\"baza_app\" action=\"baza_app.php\" method=\"post\">\n";
 		echo "		<input type=\"submit\" class=\"baza_app_button\" name=\"baza_app\" value=\"Baza prijavljenih\">\n";
 		echo "	</form>\n";
@@ -82,11 +83,62 @@
 
 
 
+		// Ako je pritisnuto delete
+		if (isset($_GET['id']))
+		{
+			$deleteValue = $_GET['id'];
+			$sqlselect = "SELECT firstname, lastname FROM tbl_users WHERE id = $deleteValue";
+			$selectResult = mysqli_query($conn, $sqlselect);
+
+			if (mysqli_num_rows($selectResult) > 0) {
+			    // output data of each row
+			    while($row = mysqli_fetch_assoc($selectResult)) {
+			        $id = $row["id"];
+			        $fname = $row["firstname"];
+			        $lname = $row["lastname"];
+			    }
+			}
+
+			$sqldelete = "DELETE FROM tbl_users WHERE id = $deleteValue";
+			$deleteResult = mysqli_query($conn, $sqldelete);
+
+			if(! $deleteResult ) {
+               die('Could not delete data: ' . mysql_error());
+            }
+      		       
+            echo "<div class=\"obrisano\">Korisnik " . $fname . " " . $lname . " je uspešno obrisan sa liste!</div>";
+      
+		}
+
+
+
+		// Ako je pritisnito trazi
 		if (isset($_POST['trazi']))
 		{
 			$searchValue = $_POST['pretraga'];	
 			$sqlselect = "SELECT * FROM `tbl_users` WHERE CONCAT (`id`, `firstname`, `lastname`, `gender`, `company`, `workposition`, `email`, `website`, `country`, `city`, `address`, `phone`, `mobile`, `note`, `category`) LIKE '%".$searchValue."%'";
 			$records = mysqli_query($conn, $sqlselect);
+		}
+		else
+		{
+			$sqlselect = "SELECT * FROM tbl_users";
+			$records = mysqli_query($conn, $sqlselect);
+		}
+
+		// Ako je pritisnito broj duplikata na stranic duplikati
+		if (isset($_GET['email']))
+		{
+			$searchValue = $_GET['email'];
+			if (empty($searchValue))
+			{
+				$sqlselect = "SELECT * FROM tbl_users WHERE trim(email) = ''";
+				$records = mysqli_query($conn, $sqlselect);	
+			}
+			else
+			{
+				$sqlselect = "SELECT * FROM `tbl_users` WHERE CONCAT (`id`, `firstname`, `lastname`, `gender`, `company`, `workposition`, `email`, `website`, `country`, `city`, `address`, `phone`, `mobile`, `note`, `category`) LIKE '%".$searchValue."%'";
+				$records = mysqli_query($conn, $sqlselect);
+			}			
 		}
 		else
 		{
@@ -126,9 +178,14 @@
 			while ($row=mysqli_fetch_array($records)) 
 			{
 				echo "<tr>";
+					$firstname = $row['firstname'];
+					$lastname = $row['lastname'];
+					$company = $row['company'];
+					$mail = $row['email'];
 					echo '<td><a href="edit.php?id=' . $row['id'] . '">Edit</a></td>';
 					// echo '<td><a href="delete.php?id=' . $row['id'] . '">Delete</a></td>';
-					echo "<td><a href=\"javascript: delete_user(" . $row['id'] . ")\">Delete</a></td>";
+					echo "<td><a href=\"javascript: delete_user(" . $row['id'] .",'" . $firstname . "','" . $lastname . "','" . $company . "','" . $mail . "'"  . ")\">Delete</a></td>";
+					//echo "<td><a href=\"javascript: delete_user(" . $row['id'] . ")\">Delete</a></td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['firstname']) . "</td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['lastname']) . "</td>";
 					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['gender']) . "</td>";
