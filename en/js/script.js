@@ -469,7 +469,7 @@ $(document).ready(function ($) {
 				if (/iPhone|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 479 ){
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
-					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 20 + "px", 'padding-bottom' : 20 + "px" })
+					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 27 + "px", 'padding-bottom' : 27 + "px" })//visina headera kad se skroluje
 					$('.search-side').css({ 'margin-top' : -7 + "px" });
 				};
 				
@@ -483,7 +483,7 @@ $(document).ready(function ($) {
 					$('.navbar-brand').css({ 'padding-top' : 2 + "px", 'padding-bottom' : 7 + "px" });
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
 				}else{
-					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 28 + "px", 'padding-bottom' : 28 + "px" })
+					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 35 + "px", 'padding-bottom' : 35 + "px" })// visina headera kad se vrati sa skrolovanja, original visina je data u style.css na liniji .navbar-default .navbar-nav > li > a {
 					$('.search-side').css({ 'margin-top' : 0  + "px" });
 				};
 				

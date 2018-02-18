@@ -112,19 +112,6 @@
 
 
 
-		// Ako je pritisnito trazi
-		if (isset($_POST['trazi']))
-		{
-			$searchValue = $_POST['pretraga'];	
-			$sqlselect = "SELECT * FROM `tbl_users` WHERE CONCAT (`id`, `firstname`, `lastname`, `gender`, `company`, `workposition`, `email`, `website`, `country`, `city`, `address`, `phone`, `mobile`, `note`, `category`) LIKE '%".$searchValue."%'";
-			$records = mysqli_query($conn, $sqlselect);
-		}
-		else
-		{
-			$sqlselect = "SELECT * FROM tbl_users";
-			$records = mysqli_query($conn, $sqlselect);
-		}
-
 		// Ako je pritisnito broj duplikata na stranic duplikati
 		if (isset($_GET['email']))
 		{
@@ -142,9 +129,24 @@
 		}
 		else
 		{
+			// Ako je pritisnito trazi
+		if (isset($_POST['trazi']))
+		{
+			$searchValue = $_POST['pretraga'];	
+			$sqlselect = "SELECT * FROM `tbl_users` WHERE CONCAT (`id`, `firstname`, `lastname`, `gender`, `company`, `workposition`, `email`, `website`, `country`, `city`, `address`, `phone`, `mobile`, `note`, `category`) LIKE '%".$searchValue."%'";
+			$records = mysqli_query($conn, $sqlselect);
+		}
+		else
+		{
 			$sqlselect = "SELECT * FROM tbl_users";
 			$records = mysqli_query($conn, $sqlselect);
 		}
+		}
+		
+
+		
+
+		
 
 
 		//$sqlselect = "SELECT * FROM tbl_users";

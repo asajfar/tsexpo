@@ -106,7 +106,7 @@
 			while ($row=mysqli_fetch_array($records)) 
 			{
 				echo "<tr>";
-					echo "<td>" . str_replace($searchValue, "<span class=\"highlight\">$searchValue</span>", $row['email']) . "</td>";
+					echo "<td>" . $row['email'] . "</td>";
 					echo '<td class="tdcenter"><a class="duplo" href="baza_all.php?email=' . $row['email'] . '">' . $row['count(*)'] . '</a></td>';
 					//echo "<td>".$row['firstname']."</td>";
 					//echo "<td>".$row['lastname']."</td>";

@@ -220,17 +220,17 @@
               <h4>Follow Us<span class="head-line"></span></h4>
               <ul class="social-icons">
                 <li>
-                  <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="facebook" target="_blank" href="https://www.facebook.com/Traffic-Solutions-Expo-2017-327245394274282/"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="twitter" href="https://twitter.com/ts_expo_ns" target="_blank"><i class="fa fa-twitter"></i></a>
                 </li>
-                <li>
+                <!-- <li>
                   <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
                 </li>
                 <li>
                   <a class="skype" href="#"><i class="fa fa-skype"></i></a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -244,7 +244,7 @@
               <h4><img src="../images/tslogo_w.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>Contact us:</p>
               <ul>
-                <li><span>Phone Number:</span> +381 (0) 64 12 49 757</li>
+                <li><span>Phone Number:</span> +381 (0) 64 12 49 757; +381 (0) 63 417 555</li>
                 <li><span>Email:</span> office@ts-expo.rs</li>
                 <li><span>Website:</span> www.ts-expo.rs</li>
               </ul>
@@ -261,7 +261,7 @@
         <div class="copyright-section">
           <div class="row">
             <div class="col-md-6">
-              <p>&copy; 2016 ts-expo.rs - All Rights Reserved</p>
+              <p>&copy; 2017 ts-expo.rs - All Rights Reserved</p>
             </div>
             <div class="col-md-6">
               <ul class="footer-nav">

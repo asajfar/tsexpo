@@ -292,11 +292,10 @@ header {
 }
 
 #komande {
-    /*height: 36px;*/
+    height: 36px;
     margin-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #FFDDD3;
-    overflow: overlay;
 }
 
 .dugme {
@@ -461,7 +460,6 @@ form.pretraga1 input[type="submit"]:hover {
 form.export_excel {
     float: left;
     margin-left: 20px;
-    margin-bottom: 0px;
 }
 
 input.export_button {
@@ -475,7 +473,6 @@ input.export_button {
     height: 36px;
     padding: 0 15px 0 15px;
     cursor: pointer;
-    margin-bottom: 0px;
 }
 
 input.export_button:hover {
@@ -485,7 +482,6 @@ input.export_button:hover {
 form.duplikat {
     float: left;
     margin-left: 20px;
-    margin-bottom: 0px;
 }
 
 input.duplikat_button {
@@ -499,7 +495,6 @@ input.duplikat_button {
     height: 36px;
     padding: 0 15px 0 15px;
     cursor: pointer;
-    margin-bottom: 0px;
 }
 
 input.duplikat_button:hover {
@@ -509,7 +504,6 @@ input.duplikat_button:hover {
 form.baza_app {
     float: right;
     margin-left: 20px;
-    margin-bottom: 0px;
 }
 
 input.baza_app_button {
@@ -523,7 +517,6 @@ input.baza_app_button {
     height: 36px;
     padding: 0 15px 0 15px;
     cursor: pointer;
-    margin-bottom: 0px;
 }
 
 input.baza_app_button:hover {
@@ -782,28 +775,4 @@ a#logoall {
     background-color: #207245;
     color: white;
     font-size: 0.8em;
-}
-
-a.duplo {
-    padding: 1px 5px 1px 5px;
-    background-color: #fbb040;
-    color: white;
-    font-weight: bold;
-}
-
-a.duplo:hover {
-    background-color: #d07d01
-}
-
-td.tdcenter {
-    text-align: center;
-}
-
-.uputstvo {
-    background-color: #c5b9a0;
-    font-size: 0.8em;
-    padding: 5px;
-    margin-left: 20px;
-    color: #fff;
-    text-align: center;
 }

@@ -85,27 +85,29 @@
     <div class="hidden-header"></div>
     <header class="clearfix">
 
+      
+      
       <!-- Start Top Bar -->
-      <div class="top-bar">
+      <!-- <div class="top-bar">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7"> -->
               <!-- Start Contact Info -->
-              <ul class="contact-details">
+              <!-- <ul class="contact-details">
                 <li><a href="#"><i class="fa fa-map-marker"></i> Novi Sad Fair, City of Novi Sad, Serbia</a>
                 </li>
                 <li><a href="#"><i class="fa fa-envelope-o"></i> office@ts-expo.rs</a>
                 </li>
                 <li><a href="#"><i class="fa fa-phone"></i> +381 (0) 64 12 49 757</a>
                 </li>
-              </ul>
+              </ul> -->
               <!-- End Contact Info -->
-            </div>
+           <!--  </div> -->
             <!-- .col-md-6 -->
-            <div class="col-md-5">
+            <!-- <div class="col-md-5"> -->
               <!-- Start Social Links -->
-              <ul class="social-list">
-                <!--<li>
+              <!-- <ul class="social-list"> -->
+               <!--<li>
                   <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
@@ -136,21 +138,21 @@
                 <li>
                   <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="callto://+***********"><i class="fa fa-skype"></i></a>
                 </li>-->
-                <li>
+               <!--  <li>
                   <a class="language-choose active" href="#"><i>EN</i></a>
                 </li>
                 <li>
                   <a class="language-choose" href="#"><i>SR</i></a>
                 </li>
-              </ul>
+              </ul> -->
               <!-- End Social Links -->
-            </div>
+            <!-- </div> -->
             <!-- .col-md-6 -->
-          </div>
+          <!-- </div> -->
           <!-- .row -->
-        </div>
+       <!--  </div> -->
         <!-- .container -->
-      </div>
+      <!-- </div> -->
       <!-- .top-bar -->
       <!-- End Top Bar -->
 
@@ -171,14 +173,14 @@
           </div>
           <div class="navbar-collapse collapse">
             <!-- Stat Search -->
-            <div class="search-side">
+            <!-- <div class="search-side">
               <a class="show-search"><i class="fa fa-search"></i></a>
               <div class="search-form">
                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
                   <input type="text" value="" name="s" id="s" placeholder="Search the site...">
                 </form>
               </div>
-            </div>
+            </div> -->
             <!--End Search -->
             <!-- Start Navigation List -->
             <ul class="nav navbar-nav navbar-right">
@@ -186,10 +188,7 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a class="active" href="programme.html">Programme</a>
-              </li>
-              <li>
-                <a href="location.html">Location & Contact</a>
+                <a href="../sr/index.html">Naslovna</a>
               </li>
             </ul>
             <!-- End Navigation List -->
@@ -202,10 +201,7 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a class="active" href="programme.html">Programme</a>
-          </li>
-          <li>
-            <a href="location.html">Location & Contact</a>
+            <a href="../sr/index.html">Naslovna</a>
           </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -223,15 +219,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Programme</h2>
+            <h2>Search this site / Pretraži sajt</h2>
             <p>Traffic Solutions Expo</p>
           </div>
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <ul class="breadcrumbs">
               <li><a href="index.html">Home</a></li>
-              <li>Programme</li>
+              <li>Registration</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -246,28 +242,40 @@
 
           <div class="row">
 
-            <div class="col-md-7">
+            <div class="col-md-12">
 
               <!-- Classic Heading -->
-              <h4 class="classic-title"><span>Programme</span></h4>
+              <!-- <h3 class="classic-title"><span>You have successfully signed / Uspešno ste prijavljeni</span></h3> -->
 
               <!-- Some Text -->
-              <p>Lorem Ipsum is simply dummy text of the <a title="Simple Tooltip" href="#" class="itl-tooltip" data-placement="top">printing</a> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Sed ut perspiciatis unde omnis iste natus error sit volup accusantium. Lorem ipsum dolor sit amet, consectetur.</p>
+              <!-- <p>You are registered successfully.</p> -->
+              <!-- <div class="box">
+                <div class="button1"><a href="login.php" class="btn btn-info"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i> &nbsp;LOGIN / PRIJAVA</a></div>
+                <div class="button2"><a href="index.html" class="btn btn-danger"><i class="fa fa-home fa-2x" aria-hidden="true"></i> &nbsp;Home Page / NASLOVNA STRANA</a></div>
 
-            </div>
+              </div> -->
 
-            <div class="col-md-5">
+              <div>
 
-              <!-- Start Touch Slider -->
-              <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">
-                <div class="item"><img alt="" src="images/about-01.jpg"></div>
-                <div class="item"><img alt="" src="images/about-02.jpg"></div>
-                <div class="item"><img alt="" src="images/about-03.jpg"></div>
+              <script>
+                (function() {
+                  var cx = '016919598791124573884:c_optb3gw2g';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <gcse:search></gcse:search>
+
               </div>
-              <!-- End Touch Slider -->
 
+              
             </div>
+
+            
 
           </div>
 
