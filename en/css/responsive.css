@@ -14,6 +14,10 @@
 	.page-banner-naslovna .slika {
 		height: 870px;
 	}
+
+	.pop-up {
+	    position: absolute;
+	}
 }
 
 @media (max-width: 1040px) {
@@ -625,3 +629,4 @@
   
 
 }
+/*------------------------------------ CSS za POP UP window -----------------------------------------*/
